@@ -1,0 +1,201 @@
+/* Eliminamos los bordes de la pagina */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Principal del sidebar */
+#sidebar{
+    position: fixed;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    left: -200px;
+    transition: all 500ms linear;
+}
+
+/* Acción cuando se activa el boton para el sidebar */
+#sidebar.active{
+    left: 0;
+}
+
+/* Estilo la lista del sidebar */
+#sidebar ul li{
+    color: rgb(0, 145, 212);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    list-style: none;
+    padding: 15px 0px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+/* Estilo del boton del sidebar */
+#sidebar .toggle-btn{
+    position: absolute;
+    left: 220px;
+    top: 20px;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+#sidebar .toggle-btn span{
+    display: block;
+    width: 20px;
+    text-align: center;
+    font-size: 12.5px;
+}
+
+/* Estilo para el titulo del sidebar */
+#sidebar h2{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+/* Estilo de la imagen del sidebar */
+.logo{
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+}
+
+/* Estilo principal del elemento incio */
+#inicio{
+    background: rgba(0, 0, 0, 0.8) url(fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    width: 100%;
+    height: 1000px;
+}
+
+/* Estilo del titulo del elemento inicio */
+#inicio h1{
+    position: relative;
+    top: 50%;
+    color: white;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+}
+
+#inicio h1:hover{
+    color: rgb(0, 145, 212);
+    transition: 1s;
+    transform: scale(1.2);
+}
+
+#inicio p:hover{
+    color: white;
+    transition: 1s;
+    transform: scale(1.2);
+}
+
+/* Estilo del subtitulo del elemento inicio */
+#inicio p{
+    position: relative;
+    top: 50%;
+    color: rgb(0, 145, 212);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo de la imagen del elemento acerca de mi */
+.imagenA{
+    width: 350px;
+    height: 350px;
+    border-radius: 25%;
+}
+
+/* Estilo principal del elemento acerca de mi */
+#acercaDeMi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    height: 700px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+/* Estilo de los parrafo del elemento acerca de mi */
+#acercaDeMi p{
+    text-align: center;
+    font: arial;
+}
+
+/* Estilo del titulo del elemento acerca de mi */
+#acercaDeMi h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(0, 145, 212);
+}
+
+/* Estilo del cuadro de texto del elemento acerca de mi */
+.info{
+    width: 700px;
+    padding: 0.625rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px #6e6e6e;
+}
+
+/* Estilo principal del elemento experiencia */
+#experiencia{
+    width: 100%;
+    height: 900px;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+    background-color: rgb(206, 206, 206);
+}
+
+/* Estilo del titulo del elemento experiencia */
+#experiencia h2{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    position: relative;
+    top: 10px;
+}
+
+/* Estilo principal del elemento contacto */
+#contacto h2{
+    color: rgb(0, 145, 212);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+/* Estilo de enlace */
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: rgb(0, 145, 212);
+}
+
+/* Estilo redes */
+#redes{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: rgb(206, 206, 206);
+}
+
+.facebook{
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+}
+
+.instagram{
+    width: 55px;
+    height: 55px;
+}

@@ -1,0 +1,54 @@
+form{
+    width:425px;
+    height: 500px;
+	border-radius: 15px;
+	margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0px 2px 15px 2px #6e6e6e;
+}
+
+.titulo{
+    color: white;
+    background-color: rgb(0, 145, 212);
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 35px;
+    border-radius: 15px 15px 0 0;
+    height: 100px;
+    line-height: 100px;
+}
+
+.field{
+    margin: auto;
+    width: 350px;
+    padding-top: 20px;
+}
+
+label{
+    color: rgb(0, 145, 212);
+    translate: 5px -32px 0;
+}
+
+form input:active ~ label, form input:focus ~ label{
+    transition: 1s;
+    transform: translateY(-20px);
+    background-color: white;
+    width: 150px;
+}
+
+#boton{
+    background-color: white;
+    color: rgb(0, 145, 212);
+    position: absolute;
+    padding: 5px;
+    width: 200px;
+    left: 43%;
+    margin-top: 20px;
+}
+
+#boton:hover{
+    background-color: rgb(0, 145, 212);
+    color: white;
+}

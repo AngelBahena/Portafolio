@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Angel Bahena</title>
+    <link rel="stylesheet" href="css/main.css"> <!--Enlace con archivo css principal-->
+    <link rel="stylesheet" href="css/formulario.css"> <!--Enlace con archivo css-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="icon" href="imagenes/LOGO.png"> <!--Icono de pestaña-->
+</head>
+<body>
+    <!--Titulo principal-->
+    <div id="inicio">
+        <h1>ANGEL OSWALDO BAHENA GARCÍA</h1>
+        <p> FUTURO INGENIERO EN SISTEMAS COMPUTACIONALES</p>
+    </div>
+
+    <!-- Acerca de mi -->
+    <section id="acercaDeMi">
+        <img src="imagenes/foto2.jpg" class="imagenA">
+        <div class="info">
+            <h2>¡TU CAMINO ES EL QUE TU FORJAS!</h2>
+            <p>Hola, me llamo Angel Oswaldo Bahena García, futuro Ingeniero en Sistemas Computacionales.<br>
+            Nací el 02 de Octubre del 2000 en la ciudad de Toluca, Estado de México.<br>
+            Estudie 4 años en el Tecnologio Nacional de México, Campus Toluca,<br> pero por problemas derivados de la pandemia tuve que abandonar la institución.<br>
+            <br> Actualmente me encuentro en Grupo ISIMA sistemas y posgrados retomando mis estudios.<br>
+            Mis mayores cualidades son el respeto, la honestidad, la tolerancia, el compañerismo,<br>
+            pero sobre todo la responsabilidad y las ganas de querer mejorar todos los dias. <br> <br>
+            Mis objetivos en la vida son: Llegar a ser un profesional de calidad, que ayude al mejoramiento de las tecnologias como las conocemos actualmente.<br>
+            Consolidarme en el campo laboral como un elemento eficiente y de alto desempeño.</p>
+        </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section id="experiencia">
+        <h2>EXPERIENCIA</h2>
+        <br>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel"> <!--Carrusel-->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imagenes/htmlCarrusel.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>HTML5</h5>
+                  <p>Creación de paginas web.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/cssCarrusel.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>CSS</h5>
+                  <p>Formato para paginas web.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/javaCarrusel.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>JAVA</h5>
+                  <p>Lenguaje de proposito general</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/sqlCarrusel.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>MySQL</h5>
+                  <p>Desarrollo y administracion de bases de datos.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+
+    <!-- Contacto -->
+    <div class="contacto" id="contacto">
+        <form action="datos.php" method="POST"><!--Formulario-->
+            <div class="titulo"> CONTACTO</div>
+            <div class="field" id="nombre"><!--Cuadro para nombre-->
+                <input type="text" name="nombre" class="form-control" id="exampleInputName">
+                <label for="exampleInputName" class="form-label">Nombre Completo</label>
+              </div>
+            <div class="field" id="correo"><!--Cuadro para correo-->
+              <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <label for="exampleInputEmail1" class="form-label" for="exampleInputEmail1">Correo Electronico</label>
+            </div>
+            <div class="field" di="telefono"> <!--Cuadro para teléfono-->
+                <input type="phone" name="telefono" class="form-control" id="exampleInputPhone">
+                <label for="exampleInputPhone" class="form-label">Teléfono</label>
+              </div>
+            <button type="submit" class="btn btn-primary" id="boton">REGISTRAR</button> <!--Boton de Registro-->
+          </form>
+    </div>
+
+    <!-- Redes sociales -->
+    <div id="redes">
+        <a href="https://www.facebook.com/angel.bahena.92"><img class="facebook" src="imagenes/facebook.png"></a>
+        <a href="https://www.instagram.com/angel_bahena_g/"><img class="instagram" src="imagenes/instagram.png"></a>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="active">
+        <div class="toggle-btn"> <!--Boton para ocultar barra-->
+            <span>&#9776;</span>
+        </div>
+        <img src="imagenes/foto.jpg" width="100px" height="100px" class="logo"/>
+        <h2>Angel Bahena</h2>
+        <ul>
+            <li><a href="#inicio">INICIO</a></li>
+            <li><a href="#acercaDeMi">ACERCA DE MI</a></li>
+            <li><a href="#experiencia">EXPERIENCIA</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
+            <li><a href="#redes">REDES SOCIALES</a></li>
+        </ul>
+    </div>
+    <br>
+
+    <script src="main.js" charset="utf-8"></script> <!--Enlace con archivo JavaScript-->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
